@@ -13,10 +13,6 @@ export default function Home() {
 
         <LoginButton navigateOnLoggedIn="/my-lobby" />
       </div>
-
-      <div className="h-screen text-center mt-16">
-        This is what you do with digital art
-      </div>
     </div>
   );
 }

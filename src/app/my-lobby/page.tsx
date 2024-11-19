@@ -20,7 +20,7 @@ function Page() {
       createNewAlbum({ name: "My-First-Album" })
         .then((album) => {
           if (album) {
-            router.push(`/lobby/${album.name}`);
+            router.push(`/my-lobby/${album.name}`);
           }
         })
     }

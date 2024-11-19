@@ -4,8 +4,6 @@ import mongoose from "mongoose";
 
 const MONGODB_URI = process.env.MONGODB_URI;
 
-
-
 // Interface for global object to avoid TypeScript errors
 interface MongooseCache {
   conn: mongoose.Connection | null;
@@ -34,7 +32,7 @@ async function connectToDatabase(): Promise<mongoose.Connection> {
 
     if (!MONGODB_URI) {
       throw new Error(
-        "Please define the MONGODB_URI environment variable inside .env.local"
+        "Please define the MONGODB_URI environment variable"
       );
     }
 
